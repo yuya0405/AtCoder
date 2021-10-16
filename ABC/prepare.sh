@@ -6,18 +6,18 @@ if [ $# == 0 ]; then
     FOLDER_PATH="${CURRENT_PATH}/ABC"
     mkdir ${FOLDER_PATH}
     # default language: python
-    touch "${FOLDER_PATH}/A.ipynb"
-    touch "${FOLDER_PATH}/B.ipynb"
-    touch "${FOLDER_PATH}/C.ipynb"
-    touch "${FOLDER_PATH}/D.ipynb"
+    python ./create-notebook.py "${FOLDER_PATH}/A"
+    python ./create-notebook.py "${FOLDER_PATH}/B"
+    python ./create-notebook.py "${FOLDER_PATH}/C"
+    python ./create-notebook.py "${FOLDER_PATH}/D"
 elif [ $# == 1 ]; then
     FOLDER_PATH="${CURRENT_PATH}/$1"
     mkdir ${FOLDER_PATH}
     # default language: python
-    touch "${FOLDER_PATH}/A.ipynb"
-    touch "${FOLDER_PATH}/B.ipynb"
-    touch "${FOLDER_PATH}/C.ipynb"
-    touch "${FOLDER_PATH}/D.ipynb"
+    python ./create-notebook.py "${FOLDER_PATH}/A"
+    python ./create-notebook.py "${FOLDER_PATH}/B"
+    python ./create-notebook.py "${FOLDER_PATH}/C"
+    python ./create-notebook.py "${FOLDER_PATH}/D"
 elif [ $# == 2 ]; then
     FOLDER_PATH="${CURRENT_PATH}/$1"
     mkdir ${FOLDER_PATH}
