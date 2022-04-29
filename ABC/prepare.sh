@@ -5,20 +5,22 @@ if [ $# == 0 ]; then
     FOLDER_PATH="./ABC"
     mkdir ${FOLDER_PATH}
     # default language: python
-    python ./create-notebook.py "${FOLDER_PATH}/A"
-    python ./create-notebook.py "${FOLDER_PATH}/B"
-    python ./create-notebook.py "${FOLDER_PATH}/C"
-    python ./create-notebook.py "${FOLDER_PATH}/D"
-    python ./create-notebook.py "${FOLDER_PATH}/E"
+    python3 ./create-notebook.py "${FOLDER_PATH}/A"
+    python3 ./create-notebook.py "${FOLDER_PATH}/B"
+    python3 ./create-notebook.py "${FOLDER_PATH}/C"
+    python3 ./create-notebook.py "${FOLDER_PATH}/D"
+    python3 ./create-notebook.py "${FOLDER_PATH}/E"
+    python3 ./create-notebook.py "${FOLDER_PATH}/F"
 elif [ $# == 1 ]; then
     FOLDER_PATH="./$1"
     mkdir ${FOLDER_PATH}
     # default language: python
-    python ./create-notebook.py "${FOLDER_PATH}/A"
-    python ./create-notebook.py "${FOLDER_PATH}/B"
-    python ./create-notebook.py "${FOLDER_PATH}/C"
-    python ./create-notebook.py "${FOLDER_PATH}/D"
-    python ./create-notebook.py "${FOLDER_PATH}/E"
+    python3 ./create-notebook.py "${FOLDER_PATH}/A"
+    python3 ./create-notebook.py "${FOLDER_PATH}/B"
+    python3 ./create-notebook.py "${FOLDER_PATH}/C"
+    python3 ./create-notebook.py "${FOLDER_PATH}/D"
+    python3 ./create-notebook.py "${FOLDER_PATH}/E"
+    python3 ./create-notebook.py "${FOLDER_PATH}/F"
 elif [ $# == 2 ]; then
     FOLDER_PATH="./$1"
     mkdir ${FOLDER_PATH}
@@ -27,6 +29,7 @@ elif [ $# == 2 ]; then
     touch "${FOLDER_PATH}/C.$2"
     touch "${FOLDER_PATH}/D.$2"
     touch "${FOLDER_PATH}/E.$2"
+    touch "${FOLDER_PATH}/F.$2"
 else
     echo "There are extra arguments in command line"
 fi
