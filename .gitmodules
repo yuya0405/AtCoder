@@ -1,0 +1,3 @@
+[submodule "AtCoder_Run"]
+	path = AtCoder_Run
+	url = https://github.com/yuya0405/AtCoder_Run
